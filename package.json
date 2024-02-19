@@ -3,7 +3,9 @@
         "@babel/core": "^7.17.0",
         "@babel/preset-env": "^7.16.0",
         "@symfony/webpack-encore": "^4.0.0",
+        "autoprefixer": "^10.4.17",
         "core-js": "^3.23.0",
+        "file-loader": "^6.2.0",
         "glob-all": "^3.3.1",
         "path": "^0.12.7",
         "postcss-loader": "^7.3.4",
@@ -21,5 +23,8 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "postcss-import": "^16.0.1"
     }
 }
