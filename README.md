@@ -6,3 +6,6 @@ https://www.youtube.com/watch?v=KmxwQHfDiVQ&list=PLFHz2csJcgk-t8ErN1BHUUxTNj45dk
 
 ## to run project 
 ### symfony serve
+
+## create form 
+### symfony console make:form MovieFormType Movie
