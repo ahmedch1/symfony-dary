@@ -117,6 +117,18 @@ class MoviesController extends AbstractController
         ]);
     }
 
+    #[Route('/movies/delete/{id}', name: 'delete_movie')]
+    public function delete($id): Response
+    {
+
+        $movie = $this->movieRepository->find($id);
+        $this->em->remove($movie);
+        $this->em->flush();
+
+        return $this->redirectToRoute('movies');
+
+    }
+
     #[Route('/movies/{id}', name: 'show_movie', methods: ['GET'])]
     public function show($id): Response
     {
